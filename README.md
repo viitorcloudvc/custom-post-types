@@ -1,8 +1,9 @@
-# custom-post-types
-Description
+# Custom Post Types
+
+## Description
 In this module, you'll learn about custom post types, what they are, when you should use them and how to create your owns to enhance your WordPress site.
 
-Objectives
+## Objectives
 At the end of this lesson, you will be able to:
 
 Define custom post types in WordPress,
