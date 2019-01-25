@@ -141,17 +141,23 @@ Using lesson's materials and [arguments section](https://codex.wordpress.org/Fu
 
 ## Quiz
 
-A short quiz for students to evaluate their retention of the material presented. **What best describes the situation when you need to create a custom post type?**
+A short quiz for students to evaluate their retention of the material presented.
+
+**What best describes the situation when you need to create a custom post type?**
 
 1.  You need to create a portfolio site
 2.  You want your items to be ordered chronologically
 3.  Your new content type is different in looks, meaning, and content
 
-**Answer:** 3.Your new content type is different in looks, meaning, and content **Which of the following is the main benefit of creating your custom post type as a new plugin?**
+**Answer:** 3.Your new content type is different in looks, meaning, and content 
+
+<hr>
+
+**Which of the following is the main benefit of creating your custom post type as a new plugin?**
 
 1.  Portability
 2.  Code validation
 3.  Accessibility
 4.  Being widget-ready
 
-**Answer:** 1\. Portability
+**Answer:** 1. Portability
