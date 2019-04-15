@@ -73,7 +73,9 @@ You want to develop a theme for an online portfolio website. So you want to have
 
 #### Registering a custom post type: The Basics
 
-1\. Make sure you've activated [WordPress TwentySixteen Theme](https://wordpress.org/themes/twentysixteen/). 2\. Open its function.php file in Sublime/gedit/Notepad/any other text editor you're comfortable using. The theme's function.php file's path should be: <your root WP folder>/wp-content/themes/twentysixteen. 3\. Add the following piece of code to the very end of file.
+1\. Make sure you've activated [WordPress TwentySixteen Theme](https://wordpress.org/themes/twentysixteen/). 
+2\. Open its function.php file in Sublime/gedit/Notepad/any other text editor you're comfortable using. The theme's function.php file's path should be: <your root WP folder>/wp-content/themes/twentysixteen. 
+3\. Add the following piece of code to the very end of file.
 
 <pre>//adding our own portfolio item
 function my_custom_portfolio_item() {
@@ -83,7 +85,9 @@ register_post_type( 'portfolio_item', $args );
 
 add_action( 'init', 'my_custom_portfolio_item' );</pre>
 
-The first line is just a comment to let your future self and possibly others know what the modifications are for. Further on, you'll describe the new post type's settings (actually, lack of any custom settings for now) and register it. Finally, add_action directive is meant to add a described function to WordPress via the _init_ hook which runs after WordPress itself has finished loading, but before any headers are sent. [![custom_post_base](https://make.wordpress.org/training/files/2014/10/cutom_post_base.png)](https://make.wordpress.org/training/files/2014/10/cutom_post_base.png) 4\. Make sure you save the file. 5\. Now, check out your site's dashboard. In spite of the fact that you registered the new post you won't see any changes. That's because you haven't configured your post to be public and visible in the dashboard explicitly, and it's not by default.
+The first line is just a comment to let your future self and possibly others know what the modifications are for. Further on, you'll describe the new post type's settings (actually, lack of any custom settings for now) and register it. Finally, add_action directive is meant to add a described function to WordPress via the _init_ hook which runs after WordPress itself has finished loading, but before any headers are sent. [![custom_post_base](https://make.wordpress.org/training/files/2014/10/cutom_post_base.png)](https://make.wordpress.org/training/files/2014/10/cutom_post_base.png) 
+4\. Make sure you save the file. 
+5\. Now, check out your site's dashboard. In spite of the fact that you registered the new post you won't see any changes. That's because you haven't configured your post to be public and visible in the dashboard explicitly, and it's not by default.
 
 #### Registering a custom post type: adding arguments
 
