@@ -73,7 +73,9 @@ You want to develop a theme for an online portfolio website. So you want to have
 
 #### Registering a custom post type: The Basics
 
-1\. Make sure you've activated [WordPress TwentySixteen Theme](https://wordpress.org/themes/twentysixteen/). 2\. Open its function.php file in Sublime/gedit/Notepad/any other text editor you're comfortable using. The theme's function.php file's path should be: <your root WP folder>/wp-content/themes/twentysixteen. 3\. Add the following piece of code to the very end of file.
+1\. Make sure you've activated [WordPress TwentySixteen Theme](https://wordpress.org/themes/twentysixteen/). </br>
+2\. Open its function.php file in Sublime/gedit/Notepad/any other text editor you're comfortable using. The theme's function.php file's path should be: <your root WP folder>/wp-content/themes/twentysixteen. </br>
+3\. Add the following piece of code to the very end of file.
 
 <pre>//adding our own portfolio item
 function my_custom_portfolio_item() {
@@ -83,7 +85,9 @@ register_post_type( 'portfolio_item', $args );
 
 add_action( 'init', 'my_custom_portfolio_item' );</pre>
 
-The first line is just a comment to let your future self and possibly others know what the modifications are for. Further on, you'll describe the new post type's settings (actually, lack of any custom settings for now) and register it. Finally, add_action directive is meant to add a described function to WordPress via the _init_ hook which runs after WordPress itself has finished loading, but before any headers are sent. [![custom_post_base](https://make.wordpress.org/training/files/2014/10/cutom_post_base.png)](https://make.wordpress.org/training/files/2014/10/cutom_post_base.png) 4\. Make sure you save the file. 5\. Now, check out your site's dashboard. In spite of the fact that you registered the new post you won't see any changes. That's because you haven't configured your post to be public and visible in the dashboard explicitly, and it's not by default.
+The first line is just a comment to let your future self and possibly others know what the modifications are for. Further on, you'll describe the new post type's settings (actually, lack of any custom settings for now) and register it. Finally, add_action directive is meant to add a described function to WordPress via the _init_ hook which runs after WordPress itself has finished loading, but before any headers are sent. [![custom_post_base](https://make.wordpress.org/training/files/2014/10/cutom_post_base.png)](https://make.wordpress.org/training/files/2014/10/cutom_post_base.png) </br>
+4\. Make sure you save the file. </br>
+5\. Now, check out your site's dashboard. In spite of the fact that you registered the new post you won't see any changes. That's because you haven't configured your post to be public and visible in the dashboard explicitly, and it's not by default.</br>
 
 #### Registering a custom post type: adding arguments
 
@@ -115,7 +119,7 @@ This is what you added:
 *   **supports** lists the default WordPress controls that are required to be set up for the edit screen for this custom post type. The default settings are to show the title field and editor, so here you may want to add support for comments, revisions, etc.
 *   **has_archive** determines whether or not you want a specific post type archive to be created for you.
 
-[tip]For a full list of adjustable settings feel free to check out the [arguments section](https://codex.wordpress.org/Function_Reference/register_post_type#Arguments) in the Codex. [/tip] 2\. Save the functions.php file. 3\. Now, refresh your site's dashboard page. You should see a menu entry for the newly created custom post type, with options to add new portfolio items and view them in both the admin section and at the website as they are published. [![view_new_post_type](https://make.wordpress.org/training/files/2014/10/view_new_post_type.png)](https://make.wordpress.org/training/files/2014/10/view_new_post_type.png) [tip]Feel free to read the [dashboard icons lesson](https://make.wordpress.org/training/handbook/theme-school/dashboard-icons/) to learn how to customize the icon added for your new post type.[/tip]
+[tip]For a full list of adjustable settings feel free to check out the [arguments section](https://codex.wordpress.org/Function_Reference/register_post_type#Arguments) in the Codex. [/tip] 2\. Save the functions.php file. 3\. Now, refresh your site's dashboard page. You should see a menu entry for the newly created custom post type, with options to add new portfolio items and view them in both the admin section and at the website as they are published. [![view_new_post_type](/images/view_new_post_type.png)](/images/view_new_post_type.png) [tip]Feel free to read the [dashboard icons lesson](https://make.wordpress.org/training/handbook/theme-school/dashboard-icons/) to learn how to customize the icon added for your new post type.[/tip]
 
 ### Summary
 
@@ -141,17 +145,23 @@ Using lesson's materials and [arguments section](https://codex.wordpress.org/Fu
 
 ## Quiz
 
-A short quiz for students to evaluate their retention of the material presented. **What best describes the situation when you need to create a custom post type?**
+A short quiz for students to evaluate their retention of the material presented.
+
+**What best describes the situation when you need to create a custom post type?**
 
 1.  You need to create a portfolio site
 2.  You want your items to be ordered chronologically
 3.  Your new content type is different in looks, meaning, and content
 
-**Answer:** 3.Your new content type is different in looks, meaning, and content **Which of the following is the main benefit of creating your custom post type as a new plugin?**
+**Answer:** 3.Your new content type is different in looks, meaning, and content 
+
+<hr>
+
+**Which of the following is the main benefit of creating your custom post type as a new plugin?**
 
 1.  Portability
 2.  Code validation
 3.  Accessibility
 4.  Being widget-ready
 
-**Answer:** 1\. Portability
+**Answer:** 1. Portability
