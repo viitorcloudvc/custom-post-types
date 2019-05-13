@@ -178,3 +178,12 @@ A short quiz for students to evaluate their retention of the material presented.
 4. Being widget-ready
 
 **Answer:** 1. Portability
+
+**Which function returns all registered post types?**
+
+1. get_post_types(); 
+2. post_types(); 
+3. get_the_type();
+4. get_custom_post_type();
+
+**Answer:** 1. get_post_types(); 
