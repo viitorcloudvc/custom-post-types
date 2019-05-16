@@ -187,3 +187,12 @@ A short quiz for students to evaluate their retention of the material presented.
 4. get_custom_post_type();
 
 **Answer:** 1. get_post_types(); 
+
+**How can we change slug name of custom post type?**
+
+1. singular_name 
+2. name 
+
+
+**Answer:** 1. singular_name
+
